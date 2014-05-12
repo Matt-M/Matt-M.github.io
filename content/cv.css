@@ -1,0 +1,126 @@
+﻿@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+body {
+    font-family: '"Helvetica Neue",Helvetica,Arial,sans-serif';
+    font-size: 16px;
+    line-height: 1.42857143;
+}
+
+.cv-centered {
+    text-align: center;
+}
+
+    .cv-centered .cv-name {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .cv-centered .cv-address {
+        font-size: 18px;
+    }
+
+    .cv-centered .cv-email {
+        font-size: 16px;
+    }
+
+        .cv-centered .cv-email a {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+
+    .cv-centered .cv-foot-note {
+        margin: 10px 0 0;
+        padding: 10px 0;
+        border-top: 1px gainsboro solid;
+        font-style: italic;
+        color: darkgray;
+    }
+
+.cv-block {
+    margin: 0 0 10px;
+}
+
+    .cv-block .cv-title {
+        border-bottom: 1.5px black solid;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .cv-block .cv-content {
+        padding: 5px 30px;
+    }
+
+        .cv-block .cv-content .cv-content-small {
+            max-width: 75%;
+        }
+
+dl.cv-skills dt {
+    width: 180px;
+    float: left;
+    font-weight: normal;
+}
+
+dl.cv-skills dd {
+    margin: 0 0 0 190px;
+    font-weight: bold;
+}
+
+.cv-work {
+}
+
+    .cv-work .cv-work-item {
+    }
+
+.item-header {
+    border-bottom: 1px gainsboro solid;
+    margin: 2px 10px 5px;
+}
+
+    .item-header .item-date {
+        float: left;
+        font-style: italic;
+        margin-right: 10px;
+    }
+
+    .item-header .item-location {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .item-header .item-title {
+        float: left;
+        font-weight: bold;
+    }
+
+.item-content {
+    margin: 2px 20px 5px;
+}
+
+    .item-content h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
