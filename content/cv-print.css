@@ -1,20 +1,31 @@
-﻿body {
-    font-family: '"Helvetica Neue",Helvetica,Arial,sans-serif';
-    font-size: 14px;
-    line-height: 1.42857143;
+﻿/* lower the font size to make it fit correctly on 2 pages */
+/* remove the padding as it is no longer required as the menu is hidden */
+body {
+    font-size: 13px;
     padding-top: 0;
 }
-
+/*enable the page breaks*/
 .page-break {
-    display: block;
     page-break-before: always;
 }
-
+/*Hide the menu*/
 ul.menu {
     display: none;
 }
 
+/* Remove the link styling*/
 .cv-email a {
     text-decoration: none;
+}
+/*Reset the text colors of purple elements*/
+.cv-centered .cv-name, .cv-centered .cv-address, .item-header, .cv-centered .cv-email a, .cv-block .cv-title, dl.cv-skills dd {
     color: black;
+}
+/*Reset the border colors of the title lines */
+.cv-block .cv-title {
+    border-color: black;
+}
+
+.item-header {
+    border-color: gainsboro;
 }
