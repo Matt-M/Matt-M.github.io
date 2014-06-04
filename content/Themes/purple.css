@@ -1,0 +1,27 @@
+﻿body.purple {
+}
+
+    body.purple .cv-centered .cv-name {
+        color: #504375;
+    }
+
+    body.purple .cv-centered .cv-address {
+        color: #594A82;
+    }
+
+    body.purple .cv-centered .cv-email a {
+        color: #8171AD;
+    }
+
+    body.purple .cv-block .cv-title {
+        color: #504375;
+        border-color: #504375;
+    }
+
+    body.purple dl.cv-skills dd {
+        color: #504375;
+    }
+
+    body.purple .item-header {
+        color: #594A82;
+    }

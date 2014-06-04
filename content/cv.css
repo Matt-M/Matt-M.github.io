@@ -1,30 +1,10 @@
-﻿body.purple {
+﻿body.serif {
+    font-family: 'Roboto Slab', serif;
 }
 
-    body.purple .cv-centered .cv-name {
-        color: #504375;
-    }
-
-    body.purple .cv-centered .cv-address {
-        color: #594A82;
-    }
-
-    body.purple .cv-centered .cv-email a {
-        color: #8171AD;
-    }
-
-    body.purple .cv-block .cv-title {
-        color: #504375;
-        border-color: #504375;
-    }
-
-    body.purple dl.cv-skills dd {
-        color: #504375;
-    }
-
-    body.purple .item-header {
-        color: #594A82;
-    }
+body.sans-serif {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 .cv-centered {
     text-align: center;
@@ -76,13 +56,13 @@
         }
 
 dl.cv-skills dt {
-    width: 180px;
+    width: 250px;
     float: left;
     font-weight: normal;
 }
 
 dl.cv-skills dd {
-    margin: 0 0 0 190px;
+    margin: 0 0 0 260px;
 }
 
 .cv-work {
