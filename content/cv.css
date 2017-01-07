@@ -48,6 +48,14 @@ body.sans-serif {
         text-shadow: 1px 1px 1px #999;
     }
 
+        .cv-block .cv-title.no-underline {
+            border-width: 0;
+        }
+
+        .cv-block .cv-title.no-shadow {
+            text-shadow: none;
+        }
+
     .cv-block .cv-content {
         padding: 5px 30px;
     }
