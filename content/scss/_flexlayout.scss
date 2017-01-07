@@ -1,0 +1,38 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.flex-box-layout {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        flex: 0 1 auto;
+    }
+
+    .main {
+        flex: 0 1 100%;
+        display: flex;
+        flex-direction: row;
+
+        aside {
+            flex: 0 1 30%;
+            padding: 15px;
+        }
+
+        .content {
+            flex: 0 1 100%;
+            padding: 15px;
+            overflow-y: auto;
+        }
+    }
+
+    .footer {
+        flex: 0 1 auto;
+        padding: 6px;
+        border-top: 1px solid lightgray;
+        background: gainsboro;
+        color: gray;
+    }
+}

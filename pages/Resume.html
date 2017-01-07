@@ -2,151 +2,171 @@
 <html>
 <head>
     <title>Resume</title>
-    <link rel="stylesheet" href="../content/site.css" />
-    <link rel="stylesheet" href="../content/cv.css" />
-    <link rel="stylesheet" href="../content/cv-print.css" media="print" />
-    <link rel="stylesheet" href="../content/cf.css" />
-    <link rel="stylesheet" href="../content/theme/purple.css" />
-
+    <link rel="stylesheet" href="/content/site.css" />
+    <link rel="stylesheet" href="/content/cv.css" />
+    <link rel="stylesheet" href="/content/cv-print.css" media="print" />
+    <link rel="stylesheet" href="/content/cf.css" />
+    <link rel="stylesheet" href="/content/theme/purple.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
-
-    <script src="../scripts/jQuery/1.11.1/jquery-1.11.1.min.js"></script>
-    <script src="../scripts/site.js"></script>
+    <script src="/scripts/jQuery/1.11.1/jquery-1.11.1.min.js"></script>
+    <script src="/scripts/site.js"></script>
+    <script src="/scripts/imagebox.js"></script>
 </head>
-<body class="serif">
-    <div class="container">
-        <div class="cv-centered">
-            <div class="cv-name">Matthew Middlebrook</div>
-            <div class="cv-address">Campbell River, BC, Canada</div>
-            <div class="cv-email">
-            </div>
-        </div>
-        <div class="cv-block">
-            <div class="cv-title">Summary</div>
-            <div class="cv-content">
-                <p>
-                    Focused and adaptable computing science graduate with 4 years work experience looking for a career in software engineering.<br />
-                    I have experience abroad, am honest, cooperative, a fast learner and very quality conscious. I have worked well in a team based environment and alone in a remote environment.
-                </p>
-            </div>
-        </div>
-        <div class="cv-block">
-            <div class="cv-title">Skills </div>
-            <div class="cv-content">
-                <dl class="cv-skills dl-horizontal">
-                    <dt>Programming Languages</dt>
-                    <dd>C#, Javascript, C++</dd>
-                    <dt>Frameworks</dt>
-                    <dd>jQuery, jQuery-Mobile, Entity Framework, Windows Communication Foundation, ASP.NET MVC</dd>
-                    <dt>Other Languages</dt>
-                    <dd>XAML, HTML, SQL, LINQ, CSS</dd>
-                    <dt>Development Tools</dt>
-                    <dd>Visual Studio, SQL Server Management Studio</dd>
-                    <dt>Other Skills</dt>
-                    <dd>Scrum, Git</dd>
-                </dl>
-            </div>
-        </div>
-        <div class="cv-block">
-            <div class="cv-title">Relevant Work Experience</div>
-            <div class="cv-work">
-                <div class="cv-work-item">
-                    <div class="item-header cf">
-                        <div class="item-date">May 2011 - Current</div>
-                        <div class="item-location">HospitalityGEM, Bath, UK</div>
-                        <div class="item-title">Web Developer</div>
-                    </div>
-                    <div class="item-content">
-                        <p>HospitalityGEM is the Business-to-Business trading brand for The Mystery Dining Company which has been working with leading hospitality businesses for a decade, they help over 1,000 restaurants, pubs, hotels and caterers to monitor their operation, listen to their customers and learn from the results.</p>
-                        <p>I work within a small development team and as a result I work mostly alone or with a partner. I have also had input at all stages of development, from planning and database design, through to the user interface.</p>
-                        <p>I have worked on three iterations of the HospitalityGEM System, allowing clients to view their dashboard, reports and analysis.</p>
-                        <ul>
-                            <li>Silverlight web application with WCF web services, including a service that interfaced with SQL Server Reporting services.</li>
-                            <li>MVC Html 5 capable web application utilising the web services created for the Silverlight application, this project also involved migrating the WCF services to a new database utilising entity framework.</li>
-                            <li>Mobile web application using MVC and jQuery Mobile.</li>
-                            <li>Additionally I developed an MVC application to allow administrators to create subscriptions which generate and deliver SQL Server Reporting services reports at specified intervals.
-                               <ul>
-                                   <li>Designed the database and client user interface based on the specification provided by our analysis department. </li>
-                               </ul>
-                            </li>
-                        </ul>
+<body class="serif flex-box-layout">
+    <header class="header">
+        <ul class="menu">
+            <li class="menu-item"><a href="../index.html">Home</a></li>
+            <li class="menu-item"><a href="Resume.html">Resume</a></li>
+            <li class="menu-item"><a href="Projects.html">Projects</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="container">
+                <div class="cv-centered">
+                    <div class="cv-name">Matthew Middlebrook</div>
+                    <div class="cv-address">Campbell River, BC, Canada</div>
+                    <div class="cv-email">
                     </div>
                 </div>
-                <div class="cv-work-item page-break">
-                    <div class="item-header cf">
-                        <div class="item-date">July 2009 - July 2010</div>
-                        <div class="item-location">Avid Development GmbH, Munich, Germany</div>
-                        <div class="item-title">Student Software Developer</div>
-                    </div>
-                    <div class="item-content">
-                        <p>12 Month work placement at an international software development company, developing Alienbrain, a media asset management system. Worked in a team of software engineers abroad and in office, expanding my communication skills.</p>
-                        <ul>
-                            <li>Migrated the code base from VS2000.net to VS2008</li>
-                            <li>Implemented new features and fixed bugs using C++, JavaScript and HTML such as:
-                                <ul>
-                                    <li>New integrations for Visual Studio, Photoshop, Maya and 3DS Max</li>
-                                    <li>A unit testing framework written in C++, to test the application functionality using Google Test</li>
-                                    <li>Modified the client server trip logging to display trips longer than 1000ms</li>
-                                </ul>
-                            </li>
-                            <li>Fixed bugs within the client and existing integrations</li>
-                            <li>Helped port Alienbrain project from 32Bit to 64bit</li>
-                            <li>Took part in daily meetings with the team in English and German</li>
-                            <li>Gained experience in planning and tracking project progress using Scrum</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cv-block">
-            <div class="cv-title">Education</div>
-            <div class="cv-work">
-                <div class="cv-work-item">
-                    <div class="item-header cf">
-                        <div class="item-date">2007 - 2011</div>
-                        <div class="item-location">Staffordshire University, Stafford, UK</div>
-                        <div class="item-title">BSc International Computing Science</div>
-                    </div>
-                    <div class="item-content">
-                        <p>12 Month work placement at Avid Development GmbH (Munich)</p>
-                        Relevant Modules Include:
-                        <ul>
-                            <li>Concurrent Programming in C#</li>
-                            <li>Further Programming Concepts in C++</li>
-                            <li>Web Services</li>
-                            <li>Object Oriented and Event Driven Programming</li>
-                            <li>Algorithmics</li>
-                            <li>Malicious Software and Security Programming</li>
-                            <li>Building Web Applications</li>
-                        </ul>
-                        <p>Focussed on developing software using C# and C++ as well as web applications and services using ASP.NET and C#</p>
-                        <h4>Final Year Project:</h4>
+                <div class="cv-block">
+                    <div class="cv-title">Summary</div>
+                    <div class="cv-content">
                         <p>
-                            Creating a web service for exposing multiple clients on a media asset management 	system
-Created a WCF web service hosted in the Windows Azure cloud; exposing a PHP web client and C# Windows client. The service was able to store versioned files and allowed for easy searching using metadata tags.
+                            Focused and adaptable computing science graduate with 4 years work experience looking for a career in software engineering.<br />
+                            I have experience abroad, am honest, cooperative, a fast learner and very quality conscious. I have worked well in a team based environment and alone in a remote environment.
                         </p>
-                        <p>Gradex 2011 Exhibitor</p>
                     </div>
                 </div>
-                <div class="cv-work-item">
-                    <div class="item-header cf">
-                        <div class="item-date">2001 - 2007</div>
-                        <div class="item-location">The Weald Community School and Sixth Form, Billingshurst, UK</div>
-                        <div class="item-title">GCSEs and A-Levels</div>
+                <div class="cv-block">
+                    <div class="cv-title">Skills </div>
+                    <div class="cv-content">
+                        <dl class="cv-skills dl-horizontal">
+                            <dt>Programming Languages</dt>
+                            <dd>C#, Javascript</dd>
+                            <dt>Frameworks</dt>
+                            <dd>jQuery, jQuery-Mobile, Entity Framework, Windows Communication Foundation, ASP.NET MVC</dd>
+                            <dt>Other Languages</dt>
+                            <dd>XAML, HTML, SQL, LINQ, CSS, Regular Expressions</dd>
+                            <dt>Development Tools</dt>
+                            <dd>Visual Studio, SQL Server Management Studio</dd>
+                            <dt>Other Skills</dt>
+                            <dd>Scrum, Git, Team Foundation Server</dd>
+                        </dl>
                     </div>
-                    <div class="item-content">
-                        <ul>
-                            <li>2 A2 Levels in Applied Information and Communication Technology</li>
-                            <li>2 AS Levels in Mathematics and Business Studies</li>
-                            <li>10 GCSEs Grades A - C including Math, English and Science</li>
-                        </ul>
+                </div>
+                <div class="cv-block">
+                    <div class="cv-title">Relevant Work Experience</div>
+                    <div class="cv-work">
+                        <div class="cv-work-item">
+                            <div class="item-header cf">
+                                <div class="item-date">Sept 2014 - Current</div>
+                                <div class="item-location">STR Speechtech, Victoria, Canada</div>
+                                <div class="item-title">Software Developer</div>
+                            </div>
+                            <div class="item-content">
+                                <ul>
+                                    <li>Designed and implemented a modular framework for decoding weather strings using Regular Expressions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-work-item">
+                            <div class="item-header cf">
+                                <div class="item-date">May 2011 - Sept 2014</div>
+                                <div class="item-location">HospitalityGEM, Bath, UK</div>
+                                <div class="item-title">Web Developer</div>
+                            </div>
+                            <div class="item-content">
+                                <p>HospitalityGEM is the Business-to-Business trading brand for The Mystery Dining Company which has been working with leading hospitality businesses for a decade, they help over 1,000 restaurants, pubs, hotels and caterers to monitor their operation, listen to their customers and learn from the results.</p>
+                                <p>I work within a small development team and as a result I work mostly alone or with a partner. I have also had input at all stages of development, from planning and database design, through to the user interface.</p>
+                                <p>I have worked on three iterations of the HospitalityGEM System, allowing clients to view their dashboard, reports and analysis.</p>
+                                <ul>
+                                    <li>Silverlight web application with WCF web services, including a service that interfaced with SQL Server Reporting services.</li>
+                                    <li>MVC Html 5 capable web application utilising the web services created for the Silverlight application, this project also involved migrating the WCF services to a new database utilising entity framework.</li>
+                                    <li>Mobile web application using MVC and jQuery Mobile.</li>
+                                    <li>
+                                        Additionally I developed an MVC application to allow administrators to create subscriptions which generate and deliver SQL Server Reporting services reports at specified intervals.
+                                        <ul>
+                                            <li>Designed the database and client user interface based on the specification provided by our analysis department. </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-work-item page-break">
+                            <div class="item-header cf">
+                                <div class="item-date">July 2009 - July 2010</div>
+                                <div class="item-location">Avid Development GmbH, Munich, Germany</div>
+                                <div class="item-title">Student Software Developer</div>
+                            </div>
+                            <div class="item-content">
+                                <p>12 Month work placement at an international software development company, developing Alienbrain, a media asset management system. Worked in a team of software engineers abroad and in office, expanding my communication skills.</p>
+                                <ul>
+                                    <li>Migrated the code base from VS2000.net to VS2008 and upgraded the project to 64bit</li>
+                                    <li>
+                                        <ul>
+                                            <li>Developed new integrations for Visual Studio, Photoshop, Maya and 3DS Max.</li>
+                                            <li>Used Google test to create a unit testing framework.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Took part in daily meetings with the team in English and German</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="cv-block">
+                    <div class="cv-title">Education</div>
+                    <div class="cv-work">
+                        <div class="cv-work-item">
+                            <div class="item-header cf">
+                                <div class="item-date">2007 - 2011</div>
+                                <div class="item-location">Staffordshire University, Stafford, UK</div>
+                                <div class="item-title">BSc International Computing Science</div>
+                            </div>
+                            <div class="item-content">
+                                <p>12 Month work placement at Avid Development GmbH (Munich)</p>
+                                Relevant Modules Include:
+                                <ul>
+                                    <li>Concurrent Programming in C#</li>
+                                    <li>Further Programming Concepts in C++</li>
+                                    <li>Web Services</li>
+                                    <li>Object Oriented and Event Driven Programming</li>
+                                    <li>Algorithmics</li>
+                                    <li>Malicious Software and Security Programming</li>
+                                    <li>Building Web Applications</li>
+                                </ul>
+                                <p>Focussed on developing software using C# and C++ as well as web applications and services using ASP.NET and C#</p>
+                                <h4>Final Year Project:</h4>
+                                <p>
+                                    Creating a web service for exposing multiple clients on a media asset management system
+                                    Created a WCF web service hosted in the Windows Azure cloud; exposing a PHP web client and C# Windows client. The service was able to store versioned files and allowed for easy searching using metadata tags.
+                                </p>
+                                <p>Gradex 2011 Exhibitor</p>
+                            </div>
+                        </div>
+                        <div class="cv-work-item">
+                            <div class="item-header cf">
+                                <div class="item-date">2001 - 2007</div>
+                                <div class="item-location">The Weald Community School and Sixth Form, Billingshurst, UK</div>
+                                <div class="item-title">GCSEs and A-Levels</div>
+                            </div>
+                            <div class="item-content">
+                                <ul>
+                                    <li>2 A2 Levels in Applied Information and Communication Technology</li>
+                                    <li>2 AS Levels in Mathematics and Business Studies</li>
+                                    <li>10 GCSEs Grades A - C including Math, English and Science</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-centered">
+                    <div class="cv-foot-note">References Available on Request</div>
                 </div>
             </div>
-        </div>
-        <div class="cv-centered">
-            <div class="cv-foot-note">References Available on Request</div>
         </div>
     </div>
+    <footer class="footer"></footer>
 </body>
 </html>

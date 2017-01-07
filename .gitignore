@@ -22,6 +22,5 @@ Thumbs.db
 obj/
 [Rr]elease*/
 _ReSharper*/
-/prepros.cfg
 /packages
 /.vs/config
