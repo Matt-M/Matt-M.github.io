@@ -1,22 +1,23 @@
 ﻿ul.menu {
+    &:first-of-type {
+        margin-top: 25px;
+        font-weight: 600;
+    }
+
+    &:last-of-type {
+        margin-bottom: 25px;
+    }
+
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 90px;
+    /*padding-left: 90px;*/
     margin: 0;
 
-    &.aside {
-        flex-direction: row;
-        padding-left: 0;
-        min-width: 180px;
-
-        li.menu-item {
-            flex: 0 1 100%;
-        }
-    }
-
     li.menu-item {
+        padding: 0 9px;
         flex: 0 1 auto;
+        margin: 0 3px;
 
         &.active {
             a {
@@ -36,52 +37,65 @@
     }
 }
 
+// Colors
 ul.menu {
-    //Purple
+    $borderwidth: 5px;
+    $subborderwidth: 10px;
+    $purple: #594A82;
+    $gray: #eee;
+    //White
     &.menu-p {
-        background: #594A82;
+        background: white;
 
         li.menu-item {
-            padding: 0 9px;
+            border: solid;
+            border-width: $borderwidth $borderwidth $subborderwidth;
+            border-color: white;
+            transition: border-color ease-out 0.5s;
 
             a {
-                color: white;
+                color: #594A82;
             }
 
-            &.active {
-                a {
-                    background: white;
-                    color: #504375;
-                }
-            }
-
-            &:hover {
-                background: #504375;
-                color: white;
+            &:hover, &.active {
+                border-top: $subborderwidth solid $purple;
+                border-bottom: $borderwidth solid $gray;
+                transition: border-bottom ease-out 0.5s, border-top ease-out 0.5s;
             }
         }
     }
     //Grey
     &.menu-g {
-        background: gainsboro;
+        background: $gray;
         color: darkgrey;
+        border-bottom: 4px solid $purple;
 
         li.menu-item {
+            border: solid;
+            border-width: $subborderwidth $borderwidth $borderwidth;
+            border-color: $gray;
+            transition: border-color ease-out 0.5s;
+
             a {
                 color: darkgrey;
             }
 
             &.active {
-                border-right: 5px solid #594A82 !important;
-
                 a {
-                    color: #594A82;
+                    color: $purple;
+                    font-weight: 700;
                 }
             }
 
-            &:hover {
-                border-right: 2px solid #594A82;
-                background: gainsboro;
+            &:hover, &.active {
+                border-bottom: $subborderwidth solid $purple;
+                border-top: $borderwidth solid $gray;
+                transition: border-top ease-out 0.5s, border-bottom ease-out 0.5s;
+
+                a {
+                    background: $gray;
+                    color: $purple;
+                }
             }
         }
     }
