@@ -5,15 +5,41 @@
         <li>
           <router-link to="/" exact>Resume</router-link>
         </li>
-        <li>
+        <!-- <li>
           <router-link to="/about">About</router-link>
-        </li>
+        </li>-->
       </ul>
     </nav>
     <router-view/>
+    <footer>
+      <div class="social">
+        <ul>
+          <li>
+            <a data-sizing="Twitter" href="https://twitter.com/midimatt89">Twitter</a>
+          </li>
+          <li>
+            <a
+              data-sizing="LinkedIn"
+              href="https://www.linkedin.com/in/matt-middlebrook-15023539"
+            >LinkedIn</a>
+          </li>
+          <li>
+            <ObfuscatedEmail msg="E-Mail" email="zbp.yvnzt@xbbeoryqqvZWggnZ"/>
+          </li>
+        </ul>
+      </div>
+      <div class="cr">Matt Middlebrook</div>
+    </footer>
   </div>
 </template>
-
+<script>
+import ObfuscatedEmail from "@/components/ObfuscatedEmail.vue";
+export default {
+  components: {
+    ObfuscatedEmail
+  }
+};
+</script>
 <style lang="scss">
 body {
   display: flex;
@@ -103,7 +129,7 @@ header {
     margin-bottom: 0;
 
     & + h3 {
-      margin-top: 0;
+      margin: 0 0 6px 0;
       color: grey;
       font-weight: 400;
     }
@@ -200,6 +226,47 @@ article {
     }
 
     text-align: center;
+  }
+}
+
+footer {
+  font-weight: 300;
+  font-size: 14px;
+  padding: 6px 0 3px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.0225);
+  color: grey;
+
+  .social {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      li {
+        flex: 0 1 auto;
+
+        a {
+          &:hover {
+            color: rgb(60, 8, 94);
+          }
+
+          padding: 3px 6px;
+          display: block;
+          color: grey;
+        }
+      }
+    }
+  }
+
+  .cr {
+    font-weight: 300;
+    font-size: 12px;
+
+    &::before {
+      content: "\00a9";
+    }
   }
 }
 

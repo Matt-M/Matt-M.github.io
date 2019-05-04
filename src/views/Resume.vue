@@ -4,7 +4,7 @@
       <header>
         <h2>{{ name }}</h2>
         <h3>{{ location }}</h3>
-        <span contenteditable>Phone Number - Email Address</span>
+        <span contenteditable>See footer for contact information.</span>
       </header>
       <section>
         <h3>Summary</h3>
