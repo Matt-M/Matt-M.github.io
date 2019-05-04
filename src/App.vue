@@ -3,7 +3,7 @@
     <nav id="nav">
       <ul>
         <li>
-          <router-link to="/">Resume</router-link>
+          <router-link to="/" exact>Resume</router-link>
         </li>
         <li>
           <router-link to="/about">About</router-link>
@@ -151,13 +151,13 @@ nav {
           }
 
           &:hover,
-          &.active {
+          &.router-link-active {
             font-weight: bold;
           }
         }
 
         &:hover,
-        &.active {
+        &.router-link-active {
           box-shadow: inset 0 -4px 0 0 rgb(60, 8, 94);
           color: black;
         }
